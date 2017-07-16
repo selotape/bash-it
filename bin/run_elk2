@@ -1,0 +1,10 @@
+kill_elk
+
+pushd /home/ron/programfiles/elasticsearch-2.4.5
+nohup ./bin/elasticsearch &
+pop
+
+pushd /home/ron/programfiles/kibana-4.6.3-linux-x86_64
+nohup ./bin/kibana &
+pop
+
