@@ -1,0 +1,5 @@
+kill_solr
+
+pushd /home/ron/programfiles/solr-5.2.1
+./bin/solr start
+popd
