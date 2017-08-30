@@ -1,3 +1,6 @@
-pushd ~/programfiles/solr-5.2.1
-./bin/solr stop
-popd
+for solr in solr-5.2.1 solr-6.3.0 
+do
+    pushd ~/programfiles/${solr}
+    ./bin/solr stop
+    popd
+done
