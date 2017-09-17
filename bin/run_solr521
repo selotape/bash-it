@@ -1,4 +1,4 @@
 pushd ~/programfiles/solr-5.2.1
 ./bin/solr stop
-./bin/solr start
+./bin/solr start $@
 popd
