@@ -67,7 +67,7 @@ do
 done
 
 # Custom
-CUSTOM="${BASH_IT_CUSTOM:=${BASH_IT}/custom}/*.bash"
+CUSTOM="${BASH_IT_CUSTOM:=${BASH_IT}/custom}/*.bash ${BASH_IT_CUSTOM:=${BASH_IT}/custom}/**/*.bash"
 for config_file in $CUSTOM
 do
   if [ -e "${config_file}" ]; then
@@ -91,3 +91,6 @@ if [ -e "$HOME/.jekyllconfig" ]
 then
   . "$HOME/.jekyllconfig"
 fi
+
+# Disable trap DEBUG on subshells - https://github.com/Bash-it/bash-it/pull/1040
+set +T
