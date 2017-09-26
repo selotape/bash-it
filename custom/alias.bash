@@ -4,3 +4,4 @@ alias gfmdv='git fetch origin dev && git merge origin/dev'
 
 
 alias updatedb='sudo updatedb'
+alias mci='mvn clean install'
