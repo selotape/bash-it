@@ -2,3 +2,6 @@ pushd ~/programfiles/solr-5.2.1
 ./bin/solr stop
 ./bin/solr start $@
 popd
+
+echo "enjoy surfing at http://localhost:8983/solr"
+
