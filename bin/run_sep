@@ -1,0 +1,6 @@
+source ~/.virtualenvs/twiggle-sep/bin/activate
+pushd ~/dev/shopymate/modules/sep
+
+PYTHONPATH=.:../../ python /home/ron/dev/shopymate/modules/sep/sep/run.py -c local_config.yaml
+
+popd
