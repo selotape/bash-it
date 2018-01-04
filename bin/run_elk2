@@ -7,4 +7,3 @@ popd
 pushd /home/ron/programfiles/kibana-4.6.3-linux-x86_64
 nohup ./bin/kibana &
 popd
-
