@@ -1,2 +1,3 @@
 pkill -f elastic
 pkill -f kibana
+pkill -f node

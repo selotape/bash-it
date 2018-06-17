@@ -1,0 +1,7 @@
+pushd ~/programfiles/kafka_2.11-1.1.0
+    ./bin/kafka-server-stop.sh
+    ./bin/zookeeper-server-stop.sh 
+    ./bin/zookeeper-server-start.sh config/zookeeper.properties &
+    ./bin/kafka-server-start.sh config/server.properties &
+popd
+
